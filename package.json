@@ -1,0 +1,23 @@
+{
+  "name": "easy-peasy_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianKrawiec/easy-peasy_EXPRESS.git"
+  },
+  "keywords": [],
+  "author": "Sk y colaboradores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianKrawiec/easy-peasy_EXPRESS/issues"
+  },
+  "homepage": "https://github.com/SebastianKrawiec/easy-peasy_EXPRESS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

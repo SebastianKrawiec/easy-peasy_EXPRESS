@@ -1,19 +1,9 @@
-let http = require("http");
+const express = require("express");
+const { userInfo } = require("os");
+const app = express();
 
-http.createServer((req, res) => {
-    res.writeHead(200,{"Content-Type":"text/plain; charset= utf-8"});
-    switch(req.url){
-        case "/":
-            res.end("Bienvenidos a nuestro sitio web");
-            break;
+app.listen(3000, ()=> console.log("servidor corriendo en puerto 3000"));
 
-        case "/1":
-            res.end("página 1");
-            break;
+const rutaEasy = require("./routes/easy-peasy");
 
-        default:
-            res.end("No encontrado");
-            break;
-    }
-
-}).listen(3030, "localhost", () => {console.log("Funcionando en el puerto 3030")})
+app.use("/", rutaEasy);
